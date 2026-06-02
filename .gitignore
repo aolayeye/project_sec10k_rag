@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# AD 698 SEC 10-K RAG project exclusions
+
+# Secrets: never commit API keys or credentials
+.env
+*.env
+
+# Raw SEC filings: large, reproducible, and not for public GitHub
+data/raw_html/
+
+# Embeddings and vector index artifacts: large/generated files
+data/embeddings/
+data/vector_store/
+
+# Notebook and Python clutter
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+.env
+data/raw_html/
+data/embeddings/
+data/vector_store/
